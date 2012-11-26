@@ -19,8 +19,9 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-  gem 'twitter-bootstrap-rails'        # mrt -- install twitter boot strap sass version
 end
+
+gem 'twitter-bootstrap-rails'        # mrt -- install twitter boot strap sass version
 
 gem 'jquery-rails'
 
