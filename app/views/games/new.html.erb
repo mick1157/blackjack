@@ -1,0 +1,13 @@
+<h1>Start Blackjack Game</h1>
+
+<%= form_tag games_path do %>
+    <p>
+    <p>
+      <%= label_tag :num_players %><br />
+      <%= number_field_tag :num_players, 1, :in => 1..4 %>
+
+    </p>
+
+    <p class="button"><%= submit_tag "Begin game" %></p>
+    <%= link_to "Cancel", root_path, :class => "btn" %>
+<% end %>

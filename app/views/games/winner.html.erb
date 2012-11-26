@@ -1,0 +1,104 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Black Jack with friends</a>
+      <div class="nav-collapse">
+        <ul class="nav nav-pills pull-right">
+
+          <% if @debug_game == "on" %>
+              <li class="pull-left">
+                <%= link_to "Stop debug", stop_debug_path %>
+              </li>
+          <% else %>
+              <li class="pull-left">
+                <%= link_to "Start debug", start_debug_path %>
+              </li>
+          <% end %>
+
+          <% if current_game %>
+              <li class="pull-left">
+                <%= link_to "New deal", new_deal_path %>   <br/>
+              </li>
+              <li class="pull-left">
+                <%= link_to "Terminate game", end_game_path %>
+              </li>
+
+          <% end %>
+
+          <% if current_user %>
+              <li class="pull-right">
+                <%= link_to "Log out", log_out_path %>
+              </li>
+          <% else %>
+              <li class="pull-right">
+                <%= link_to "Sign up", sign_up_path %>
+              </li>
+              <li class="pull-right">
+                <%= link_to "Log in", log_in_path %>
+              </li>
+          <% end %>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h1>Determining Winners and Losers</h1>
+
+<div id="games_nav">
+
+  <% if current_game %>
+
+      <p>The dealer has a -->  <%=  @dealer_cards  %>  total= <%= @dealer_total %>   </p>
+      <% @display_cards = @dealer_cards  %> <%= render :partial => 'display-cards' %>
+
+      <p>Player 1 has a --> <%=  @player1_cards  %>  total= <%= @player1_total %>  <%= @player1_status %> </p>
+      <% @display_cards = @player1_cards  %> <%= render :partial => 'display-cards' %>
+
+      <% if @num_players >= 2  %>
+          <p>Player 2 has a --> <%=  @player2_cards  %>  total= <%= @player2_total %>  <%= @player2_status %> </p>
+          <% @display_cards = @player2_cards  %> <%= render :partial => 'display-cards' %>
+      <% end # @num_players >= 2 %>
+
+      <% if @num_players >= 3  %>
+          <p>Player 3 has a --> <%=  @player3_cards  %>  total= <%= @player3_total %>  <%= @player3_status %> </p>
+          <% @display_cards = @player3_cards  %> <%= render :partial => 'display-cards' %>
+      <% end # @num_players >= 3 %>
+
+      <% if @num_players >= 4  %>
+          <p>Player 4 has a --> <%=  @player4_cards  %>  total= <%= @player4_total %>  <%= @player4_status %> </p>
+          <% @display_cards = @player4_cards  %> <%= render :partial => 'display-cards' %>
+      <% end # @num_players >= 4 %>
+
+
+<% end %>
+  <br/>
+
+</div>
+
+
+    <% if @debug_game == "on" %>
+        <% @blackjackgame_array.each do |blackjack_game| %>
+            <div class='row-fluid'>
+              <div class='span5'>
+                <div class='well'>
+
+                  <div class='pull-right'>
+                    <%= time_ago_in_words(blackjack_game.created_at) %> ago
+                  </div>
+                  <br />
+                  <%= blackjack_game.state.inspect %>
+                </div>
+              </div>
+            </div>
+        <% end # each %>
+    <% end # if @debug_game %>
+
+</div>

@@ -1,0 +1,16 @@
+<h1>Session#index</h1>
+<p>Find me in app/views/session/index.html.erb</p>
+<% @post.each do |post| %>
+    <div class='row-fluid'>
+      <div class='span5'>
+        <div class='well'>
+
+          <div class='pull-right'>
+            <%= time_ago_in_words(post.created_at) %> ago
+          </div>
+          <br />
+          <%= post.content %>
+        </div>
+      </div>
+    </div>
+<% end %>
