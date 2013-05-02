@@ -1,5 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" compressed="false" hash="17829326" />
+  <component name="DataSourceManagerImpl" format="xml" hash="1554277675">
+    <data-source source="LOCAL" name="Rails blackjack: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="965eed6e-c3ba-4e0c-95f6-d18ff5d61c33">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:blackjack_production</jdbc-url>
+      <user-name>blackjack</user-name>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails blackjack: development" product="PostgreSQL" version="9.2.1" jdbc-version="3.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.1 JDBC3 (build 901)" uuid="06fb6e07-bb49-46f0-ae5c-ecc685a47b02">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/blackjack_development</jdbc-url>
+      <user-name>blackjack</user-name>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails blackjack: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="e5220e4d-a6bf-4cb4-90d7-75e5fa738c5e">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:blackjack_test</jdbc-url>
+      <user-name>blackjack</user-name>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails blackjack: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="b9f97333-1ec2-43ad-8187-4af743df3fce">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:blackjack_test</jdbc-url>
+      <user-name>blackjack</user-name>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>jar://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails blackjack: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="855fea70-d26e-41ef-8326-e301286c4e98">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:blackjack_production</jdbc-url>
+      <user-name>blackjack</user-name>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>jar://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails blackjack: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f21a88a4-efd8-45b2-81ec-9d072870bc39">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/blackjack_development</jdbc-url>
+      <user-name>blackjack</user-name>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>jar://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails blackjack: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="3dbc891e-c1f0-4688-9488-86747970580d">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:blackjack_test</jdbc-url>
+      <user-name>blackjack</user-name>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>jar://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails blackjack: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="db7280c7-d57f-40bb-acde-bf13d6705f35">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:blackjack_production</jdbc-url>
+      <user-name>blackjack</user-name>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>jar://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails blackjack: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="65ad7db0-ef3e-4239-9dcf-306f8c2afaa1">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/blackjack_development</jdbc-url>
+      <user-name>blackjack</user-name>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>jar://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
 </project>
 

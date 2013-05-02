@@ -14,3 +14,15 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+$(function(){
+
+    $("#hit_me").click(function() {
+    alert("Handler for .click() called.");
+    $.getJSON('hit_games.json', function(data) {
+        alert(data);
+    }); return false
+    });
+
+
+})
