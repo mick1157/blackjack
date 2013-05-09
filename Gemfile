@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+ruby '1.9.3'                                # Mrt added
+gem 'rails', '3.2.11'                       # mrt -- was 3.2.8
 gem 'bcrypt-ruby', :require => 'bcrypt'     # Mrt -- this encrypt / decrypts passwords
 
 # Bundle edge Rails instead:
@@ -8,10 +9,12 @@ gem 'bcrypt-ruby', :require => 'bcrypt'     # Mrt -- this encrypt / decrypts pas
 
 gem 'pg'
 
+gem 'therubyracer'                          # Mrt  fixing prob with less - after updating
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
+  gem 'less-rails'                         # Mrt - fixing prob with less - after updating
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
@@ -19,9 +22,9 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-end
+  gem 'twitter-bootstrap-rails'        # mrt -- install twitter boot strap sass version
 
-gem 'twitter-bootstrap-rails'        # mrt -- install twitter boot strap sass version
+end
 
 gem 'jquery-rails'
 
